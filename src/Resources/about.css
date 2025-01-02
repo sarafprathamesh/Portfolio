@@ -1,0 +1,128 @@
+.about-page {
+  background-color: #000;
+  color: #fff;
+  padding: 2rem;
+}
+
+.about-container {
+  display: flex;
+  gap: 2rem;
+  flex-wrap: wrap;
+  height: 90vh;
+  padding: 50px;
+}
+.about-summary{
+  text-align: justify;
+  font-size: 1.2rem;
+}
+/* Left Section */
+.about-left {
+  flex: 1;
+  max-width: 40%;
+  /* font-family: cursive; */
+}
+
+.profile-image {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 1rem;
+}
+
+.circle-image {
+  border-radius: 50%;
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+}
+
+.personal-info p {
+  font-size: 0.9rem;
+  margin: 0.5rem 0;
+}
+
+.skills-section h3 {
+  margin-top: 1rem;
+  text-transform: uppercase;
+}
+
+.skill {
+  margin-bottom: 1rem;
+}
+
+.skill-bar {
+  background-color: #333;
+  height: 5px;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.skill-progress {
+  background-color: #ffa500;
+  height: 100%;
+  transition: width 0.5s ease-in-out;
+}
+
+/* Right Section */
+.about-right {
+  flex: 1;
+  max-width: 55%;
+  /* font-family: cursive; */
+}
+
+.about-right h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.details{
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+  line-height: 1.5;
+  text-align: left;
+}
+
+/* In about.css */
+.details {
+  display: flex;
+  flex-direction: column; /* Stack the items vertically */
+  gap: 15px; /* Add space between each item */
+  margin-top: 20px;
+}
+
+.detail-item {
+  display: flex;
+  justify-content: space-between; /* Spread label and value across the available width */
+  align-items: center; /* Vertically align the label and value */
+}
+
+.detail-item strong {
+  font-weight: bold;
+  flex: 1; /* Ensures the label takes up minimum space */
+  min-width: 150px; /* Minimum width to align labels */
+}
+
+.detail-item span {
+  flex: 2; /* The value part will take up the remaining space */
+  text-align: left; /* Align the values to the left */
+}
+
+
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .about-container {
+    display: flex;
+    flex-flow: column;
+    height: 100%;
+  }
+
+  .about-left,
+  .about-right {
+    max-width: 100%;
+  }
+
+  .circle-image {
+    width: 120px;
+    height: 120px;
+  }
+}

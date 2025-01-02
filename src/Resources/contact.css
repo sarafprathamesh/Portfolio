@@ -1,0 +1,85 @@
+/* Base Styles */
+.contact-container {
+  text-align: center;
+  background-color: #000;
+  color: #fff;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+}
+
+.contact-container h1 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.contact-container p {
+  font-size: 1rem;
+  margin-bottom: 20px;
+}
+
+.contact-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  padding: 0 20px;
+}
+
+.contact-item {
+  text-align: center;
+  background-color: #121212;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+.contact-item h3 {
+  font-size: 1.2rem;
+  margin: 10px 0;
+}
+
+.contact-item p {
+  font-size: 1rem;
+  margin: 5px 0;
+  color: #ffd700;
+}
+
+.contact-icon {
+  font-size: 2rem;
+  color: #f0a500;
+  margin-bottom: 10px;
+}
+
+.contact-item a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Responsive CSS */
+@media (max-width: 768px) {
+  .contact-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .contact-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .contact-container h1 {
+    font-size: 2rem;
+  }
+
+  .contact-container p {
+    font-size: 0.9rem;
+  }
+
+  .contact-item h3 {
+    font-size: 1rem;
+  }
+
+  .contact-item p {
+    font-size: 0.9rem;
+  }
+}

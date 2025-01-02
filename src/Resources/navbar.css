@@ -1,0 +1,129 @@
+/* General Styles */
+.header {
+  background-color: #000;
+  color: white;
+  padding: 1rem 2rem;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.logo {
+  font-size: 1.8rem;
+  font-weight: bold;
+  margin: 0;
+  font-family: cursive;
+}
+
+/* Navbar Links */
+.navbar {
+  position: relative;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+  margin: 0;
+  padding: 0;
+  transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+  cursor: pointer;
+  font-family: cursive;
+}
+
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: 500;
+  transition: color 0.3s;
+  cursor: pointer;
+}
+
+.nav-links a:hover {
+  color: #ffa500;
+}
+.nav-link.active {
+  color: #ffa500;  /* Or whatever color you want for the active link */
+  font-weight: bold;
+}
+/* Mobile Menu Styles */
+.nav-toggle {
+  display: none;
+  background: none;
+  border: none;
+  cursor: pointer;
+  z-index: 1100;
+  position: relative;
+}
+
+.hamburger {
+  width: 25px;
+  height: 3px;
+  background-color: white;
+  display: block;
+  position: relative;
+  transition: transform 0.3s ease;
+}
+
+.hamburger::before,
+.hamburger::after {
+  content: "";
+  width: 25px;
+  height: 3px;
+  background-color: white;
+  display: block;
+  position: absolute;
+  transition: transform 0.3s ease;
+}
+
+.hamburger::before {
+  top: -8px;
+}
+
+.hamburger::after {
+  top: 8px;
+}
+
+/* Mobile View */
+@media (max-width: 768px) {
+  .nav-links {
+    flex-direction: column;
+    background-color: #000;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    left: -90px;
+    padding: 10px 10px;
+    display: none;
+    gap: 7px;
+    border-bottom: 1px solid #e1dbdb;
+  }
+
+  .nav-links.active {
+    display: flex; /* Show menu when active */
+  }
+
+  .nav-toggle {
+    display: block;
+  }
+
+  .nav-links li {
+    margin: 0;
+    text-align: left;
+  }
+
+  .hamburger.active {
+    transform: rotate(90deg); /* Optional: Add rotation animation */
+  }
+}
