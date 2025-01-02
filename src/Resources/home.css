@@ -1,0 +1,79 @@
+.home-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #000; /* Black background */
+    color: #fff; /* White text */
+    padding: 50px;
+    height: 70vh;
+  }
+  
+  .about-content {
+    flex: 1;
+    /* font-family: cursive; */
+  }
+  
+  .about-content h2 {
+    color: #ffa500; /* Orange color for "Hello!" */
+    font-size: 50px;
+  }
+  
+  .about-content h1 {
+    font-size: 3rem;
+    margin: 10px 0;
+  }
+  
+  .about-content .highlight {
+    color: #ffa500; /* Highlight color */
+  }
+  
+  .about-content h3 {
+    font-size: 2.5rem;
+    margin: 10px 0;
+  }
+  
+  .buttons {
+    margin-top: 20px;
+  }
+  
+  .button {
+    text-decoration: none;
+    font-size: 1rem;
+    padding: 10px 20px;
+    margin-right: 10px;
+    border-radius: 5px;
+    display: inline-block;
+    font-weight: bold;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  
+  .button.instagram {
+    background-color: #ffa500;
+    color: #000;
+  }
+  
+  .button.instagram:hover {
+    background-color: #e69500;
+  }
+  
+  .button.linkedin {
+    background-color: transparent;
+    color: #fff;
+    border: 2px solid #fff;
+  }
+  
+  .button.linkedin:hover {
+    background-color: #fff;
+    color: #000;
+  }
+  
+  .about-image {
+    flex: 1;
+    text-align: right;
+  }
+  
+  .profile-picture {
+    max-width: 300px;
+    border-radius: 50%;
+  }
+  

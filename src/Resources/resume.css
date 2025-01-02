@@ -1,0 +1,91 @@
+/* Resume.css */
+
+body {
+  margin: 0;
+  font-family: "Arial", sans-serif;
+  background-color: #000;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.resume-container {
+  text-align: center;
+  padding: 20px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* font-family: cursive; */
+}
+
+.main-title {
+  font-size: 4rem;
+  font-weight: bold;
+  z-index: 2;
+  position: relative;
+}
+
+.overlay-title {
+  font-size: 8rem;
+  font-weight: bold;
+  color: rgba(255, 255, 255, 0.1);
+  position: absolute;
+  top: 15%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+  white-space: nowrap;
+}
+
+.description {
+  font-size: 1.2rem;
+  line-height: 1.6;
+  /* margin-top: 80px; */
+  max-width: 70%;
+  z-index: 2;
+  position: relative;
+  /* margin-left: 200px; */
+  text-align: justify;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .main-title {
+    font-size: 2rem;
+  }
+
+  .overlay-title {
+    font-size: 4rem;
+  }
+
+  .description {
+    font-size: 0.9rem;
+    line-height: 1.4;
+  }
+}
+
+@media (max-width: 480px) {
+  .main-title {
+    font-size: 1.5rem;
+  }
+
+  .overlay-title {
+    font-size: 3rem;
+    margin-top: 20px;
+  }
+
+  .description {
+    font-size: 0.8rem;
+    margin-top: 30px;
+    /* text-align: justify; */
+    margin-left: 0px;
+  }
+  .resume-container {
+    text-align: center;
+    padding: 40px;
+    position: relative;
+}
+}
